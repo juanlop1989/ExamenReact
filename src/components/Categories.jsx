@@ -20,11 +20,11 @@ const Categories =() => {
 
     //Obtener listado desde la Api
     const getCategories = async () => {               
-        const responsive = await axios.get(url);
-        setCategories(responsive.data)
+        const response = await axios.get(url);
+        setCategories(response.data)
     }
 
-    useEffect(() => {getCategories() 
+    useEffect(() => { 
         getCategories()
     })
 
@@ -167,7 +167,7 @@ const Categories =() => {
                                             <td>{i + 1}</td>
                                             <td>{categories.name}</td>
                                             <td>
-                                                <img src={categories.image} alt={`Imagen de ${categories.name}`} style={{ width: '65px', height: '65px', borderRadius: '35%' }} />
+                                                <img src={categories.image} alt={`Imagen de ${categories.name}`} style={{ width: '50px', height: '50px', borderRadius: '50%' }} />
                                             </td>
                                             <td>
                                                 <button onClick={() => openModal(2, categories.id, categories.name, categories.image)} className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalCategories">
