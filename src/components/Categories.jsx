@@ -141,7 +141,7 @@ const Categories =() => {
             <div className="row mt-3">
                 <div className="col-md-4 offset-md-4">
                     <div className="d-grid mx-auto">
-                        <button onClick={() => openModal(1)} className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCategories">
+                        <button onClick={() => openModal(1)} className="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCategories">
                             <i className="fa-solid fa-circle-plus" /> Nueva Categoría
                         </button>
                     </div>
@@ -185,6 +185,13 @@ const Categories =() => {
                     </div>
                 </div>
             </div>
+
+            {/* Footer */}
+            <footer className="text-center mt-5">
+                <p>&copy; 2024 - Desarrollado por "Juan Carlos López"</p>
+                <p>Cuanta: "T32351200"</p>
+            </footer>
+
             <div id="modalCategories" className="modal fade" area-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
@@ -196,9 +203,9 @@ const Categories =() => {
                             <input type="hidden" id="id"></input>
                             <div className="input-group mb-3">
                                 <span className="input-group-text">
-                                    <i class="fa-solid fa-signature"></i>
+                                    <i class="fa-solid fa-list"></i>
                                 </span>
-                                <input type="text" id="nombre" className="form-control" placeholder="nombre" value={name} onChange={(e) => setName(e.target.value)}></input>
+                                <input type="text" id="nombre" className="form-control" placeholder="Nombre de Categoría" value={name} onChange={(e) => setName(e.target.value)}></input>
                             </div>
                             
 
