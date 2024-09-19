@@ -186,11 +186,7 @@ const Categories =() => {
                 </div>
             </div>
 
-            {/* Footer */}
-            <footer className="text-center mt-5">
-                <p>&copy; 2024 - Desarrollado por "Juan Carlos López"</p>
-                <p>Cuanta: "T32351200"</p>
-            </footer>
+            
 
             <div id="modalCategories" className="modal fade" area-hidden="true">
                 <div className="modal-dialog">
@@ -228,7 +224,13 @@ const Categories =() => {
                     </div>
                 </div>
             </div>
+            {/* Footer */}
+            <footer className="text-center mt-5">
+                <p>&copy; 2024 - Desarrollado por "Juan Carlos López"</p>
+                <p>Cuenta: "T32351200"</p>
+            </footer>
         </div>
+        
     );
 }
 
